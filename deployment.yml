@@ -1,13 +1,13 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: httpd
+  name: httpd-web
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: httpd
+        app: httpd-web
     spec:
       containers:
       - name: httpd-web
